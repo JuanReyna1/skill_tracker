@@ -30,7 +30,7 @@ const teamMembers = [
         image: null,
     },
     {
-        name: "Team Member 5",
+        name: "Ricardo Morales Perez",
         role: "Role / Position",
         bio: "Short bio about this team member goes here.",
         ownership: "Project responsibility goes here.",
