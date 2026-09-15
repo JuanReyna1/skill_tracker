@@ -195,3 +195,233 @@ body {
 [data-theme="dark"] .team-card-avatar {
   background-color: #8b5cf6;
 }
+
+/* Home Page Showcase */
+.showcase-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .showcase-container {
+    flex-direction: row;
+    gap: 4rem;
+  }
+}
+
+.showcase-sidebar {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .showcase-sidebar {
+    flex: 0 0 200px;
+    justify-content: flex-end;
+  }
+}
+
+.level-indicator-container {
+  position: sticky;
+  top: 100px; /* Adjust based on navbar height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  height: 200px;
+}
+
+.level-text {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--purple);
+  margin: 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.level-progress-bar {
+  width: 8px;
+  height: 150px;
+  background-color: rgba(124, 58, 237, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.level-progress-fill {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--purple);
+  transition: height 0.5s ease;
+}
+
+.showcase-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6rem;
+  flex: 1;
+  padding-bottom: 20vh; /* Allow scrolling past the last item */
+}
+
+.showcase-card {
+  background-color: var(--background);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 16px;
+  padding: 2.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  opacity: 0.5;
+  transform: scale(0.95);
+  transition: all 0.5s ease;
+}
+
+.showcase-card.active {
+  opacity: 1;
+  transform: scale(1);
+  border-color: var(--purple);
+  box-shadow: 0 10px 40px rgba(124, 58, 237, 0.15);
+}
+
+.showcase-card-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--surface);
+  color: var(--purple);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 999px;
+  margin-bottom: 1rem;
+}
+
+.showcase-card-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.75rem;
+  color: var(--text-primary);
+}
+
+.showcase-card-description {
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+[data-theme="dark"] .showcase-card {
+  background-color: var(--surface);
+  border-color: rgba(139, 92, 246, 0.2);
+}
+
+[data-theme="dark"] .showcase-card.active {
+  border-color: var(--purple-light);
+  box-shadow: 0 10px 40px rgba(139, 92, 246, 0.2);
+}
+
+[data-theme="dark"] .showcase-card-category {
+  background-color: rgba(139, 92, 246, 0.15);
+  color: var(--purple-light);
+}
+
+[data-theme="dark"] .level-text {
+  color: var(--purple-light);
+}
+
+[data-theme="dark"] .level-progress-bar {
+  background-color: rgba(139, 92, 246, 0.2);
+}
+
+[data-theme="dark"] .level-progress-fill {
+  background-color: var(--purple-light);
+}
+
+/* Home Page Hero Layout */
+.home-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-section {
+  position: relative;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  overflow: hidden;
+}
+
+.hero-background-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px; /* Black grid gap */
+  background-color: #000;
+  z-index: 0;
+}
+
+.hero-grid-item {
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4; /* Opaque images as requested */
+  transition: opacity 0.3s ease;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 100%);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-title {
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-title-img {
+  width: clamp(300px, 50vw, 460px);
+  max-width: 100%;
+  height: auto;
+  max-height: 460px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 25px rgba(0, 0, 0, 0.45));
+}
+
+.hero-description {
+  margin-top: 0.5rem;
+  color: #f4f4f5;
+  text-shadow: 0 1px 5px rgba(0,0,0,0.5);
+  font-size: 1.35rem;
+}
+
+.showcase-section {
+  background-color: var(--background);
+  position: relative;
+  z-index: 5;
+  padding-bottom: 4rem;
+}
