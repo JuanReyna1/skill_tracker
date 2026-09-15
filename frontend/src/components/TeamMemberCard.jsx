@@ -1,8 +1,21 @@
-function TeamMemberCard({ name, role, bio, ownership }) {
+import { useState } from "react";
+
+function TeamMemberCard({ name, role, bio, ownership, image }) {
+    const [hasError, setHasError] = useState(false);
+
     return (
         <div className="team-card">
             <div className="team-card-avatar">
-                {name.charAt(0)}
+                {image && !hasError ? (
+                    <img
+                        src={image}
+                        alt={name}
+                        className="team-card-avatar-img"
+                        onError={() => setHasError(true)}
+                    />
+                ) : (
+                    name.charAt(0)
+                )}
             </div>
 
             <h2 className="team-card-name">

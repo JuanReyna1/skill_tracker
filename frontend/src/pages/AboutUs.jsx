@@ -2,35 +2,39 @@ import TeamMemberCard from "../components/TeamMemberCard";
 
 const teamMembers = [
     {
-        name: "Team Member 1",
-        role: "Role / Position",
-        bio: "Short bio about this team member goes here.",
-        ownership: "Project responsibility goes here.",
+        name: "Isaac Padilla",
+        role: "Software Engineer",
+        bio: "Isaac is a full-stack software engineer with experience in web development, database management, and cloud computing. He is passionate about building scalable and efficient software solutions.",
+        ownership: "I am responsible for the front-end development, database management, and cloud computing aspects of the project.",
+        image: "/profile_images/IsaacPadilla.jpeg",
     },
     {
         name: "Team Member 2",
         role: "Role / Position",
         bio: "Short bio about this team member goes here.",
         ownership: "Project responsibility goes here.",
+        image: null,
     },
     {
         name: "Team Member 3",
         role: "Role / Position",
         bio: "Short bio about this team member goes here.",
         ownership: "Project responsibility goes here.",
+        image: null,
     },
     {
         name: "Team Member 4",
         role: "Role / Position",
         bio: "Short bio about this team member goes here.",
         ownership: "Project responsibility goes here.",
+        image: null,
     },
-    ,
     {
         name: "Team Member 5",
         role: "Role / Position",
         bio: "Short bio about this team member goes here.",
         ownership: "Project responsibility goes here.",
+        image: null,
     },
 ];
 
@@ -52,6 +56,7 @@ function AboutUs() {
                             role={member.role}
                             bio={member.bio}
                             ownership={member.ownership}
+                            image={member.image}
                         />
                     ))}
                 </div>

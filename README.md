@@ -43,12 +43,16 @@ Open the provided URL in your browser.
 ```text
 project-root/
 ├── frontend/
-│   ├── public/          # Static assets
+│   ├── public/          # Static assets (including profile images)
 │   ├── src/             # React application source code
 │   ├── package.json     # Frontend dependencies and scripts
 │   └── vite.config.js   # Vite configuration
-├── ...
+├── TEAM_MEMBER_GUIDE.md # Instructions for team members to add bio & photo
 └── README.md
+
+## Team Contributing
+
+Team members can add their bio, ownership, and profile picture to the **About Us** page by following the instructions in [TEAM_MEMBER_GUIDE.md](TEAM_MEMBER_GUIDE.md).
 
 ## Technologies Used
 
