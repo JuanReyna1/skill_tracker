@@ -2,10 +2,20 @@
     height: 70px;
     display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
     padding: 0 3rem;
     background-color: var(--background);
     border-bottom: 1px solid var(--surface);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    height: 50px;
+    width: auto;
 }
 
 .navbar-links {

@@ -22,6 +22,9 @@ function Navbar() {
 
     return (
         <nav className="navbar">
+            <Link to="/" className="navbar-logo">
+                <img src="/logo.png" alt="Skill Up Logo" />
+            </Link>
             <div className="navbar-links">
                 <Link to="/">Home</Link>
                 <Link to="/about-us">About Us</Link>
