@@ -34,7 +34,7 @@ const teamMembers = [
         role: "Role / Position",
         bio: "I'm a UTEP student pursuing a Bachelor's degree in Computer Science, with the possibility of pursuing a Ph.D. in Computer Science in the future. I'm interested in learning web development, and I enjoy traveling, reading, trying new things, and having fun.",
         ownership: "Project responsibility goes here.",
-        image: null,
+        image: "/profile_images/RickPhoto.jpg"
     },
 ];
 
