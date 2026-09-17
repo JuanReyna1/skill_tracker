@@ -9,10 +9,10 @@ const teamMembers = [
         image: "/profile_images/IsaacPadilla.jpeg",
     },
     {
-        name: "Team Member 2",
-        role: "Role / Position",
-        bio: "Short bio about this team member goes here.",
-        ownership: "Project responsibility goes here.",
+        name: "Karina Rivera",
+        role: "Software Engineer",
+        bio: "I am a software engineer with a strong background in web development and user experience design. I enjoy creating intuitive and visually appealing interfaces.",
+        ownership: "I am responsible for the front-end development and user experience design of the project.",
         image: null,
     },
     {
