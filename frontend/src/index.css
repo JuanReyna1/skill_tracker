@@ -425,3 +425,158 @@ body {
   z-index: 5;
   padding-bottom: 4rem;
 }
+
+/* Sprint Pages Layout */
+
+.sprint-page {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.sprint-header {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem 2rem;
+}
+
+.sprint-header h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  color: #7c3aed;
+}
+
+.sprint-header p {
+  max-width: 700px;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Sprint Sub-Navigation */
+
+.sprint-subnav {
+  position: sticky;
+  top: 70px;
+  z-index: 900;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+  padding: 0.3rem 2rem;
+
+  background-color: var(--background);
+  border-bottom: 1px solid var(--surface);
+}
+
+.sprint-subnav a {
+  color: var(--purple);
+  font-weight: 600;
+  text-decoration: none;
+
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.sprint-subnav a:hover {
+  color: var(--purple-light);
+  border-bottom-color: var(--purple-light);
+}
+
+/* Sprint Content */
+
+.sprint-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.sprint-section {
+  padding: 4rem 0;
+  scroll-margin-top: 130px;
+}
+
+.sprint-section + .sprint-section {
+  border-top: 1px solid #e5e7eb;
+}
+
+.sprint-section h2 {
+  margin: 0;
+
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--purple);
+}
+
+.sprint-topic {
+  max-width: 850px;
+  margin-bottom: 3rem;
+}
+
+.sprint-topic h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.4rem;
+}
+
+.sprint-topic p {
+  margin-bottom: 1rem;
+  line-height: 1.8;
+}
+
+.section-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.section-heading h2 {
+  margin: 0;
+}
+
+.pdf-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.75rem;
+  color: var(--purple);
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline;
+
+  transition:
+      background-color 0.2s ease,
+      color 0.2s ease,
+      transform 0.2s ease;
+}
+
+.pdf-button:hover {
+  color: var(--purple-light);
+  transform: translateY(-1px);
+}
+
+/* Sprint Pages - Dark Mode */
+
+[data-theme="dark"] .sprint-subnav {
+  background-color: var(--background);
+  border-bottom-color: var(--surface);
+}
+
+[data-theme="dark"] .sprint-subnav a {
+  color: var(--purple);
+}
+
+[data-theme="dark"] .sprint-subnav a:hover {
+  color: var(--purple-light);
+  border-bottom-color: var(--purple-light);
+}
+
+[data-theme="dark"] .sprint-header h1,
+[data-theme="dark"] .sprint-section h2 {
+  color: var(--purple);
+}
+
+[data-theme="dark"] .sprint-section + .sprint-section {
+  border-top-color: var(--surface);
+}

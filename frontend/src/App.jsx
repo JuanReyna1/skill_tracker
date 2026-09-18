@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
+import Sprint1 from './pages/Sprint1'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/sprint-1" element={<Sprint1 />} />
       </Routes>
     </BrowserRouter>
   )
