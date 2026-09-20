@@ -161,7 +161,10 @@ function Sprint1() {
                                     Timeline/schedule constraints: The project needs to be delivered within the project timeline set by the due date which restricts the time available for implementing and testing all the features.
                                 </li>
                                 <li>
-                                    Resource/technology constraints: There could be constraints relating to the programming skills, time, hardware, software, and use of external resources of the development team. Development team availability: The development must be done based on the availability of the development team.
+                                    Resource/technology constraints: There could be constraints relating to the programming skills, time, hardware, software, and use of external resources of the development team. 
+                                </li>
+                                <li>
+                                    Development team availability: The development must be done based on the availability of the development team.
                                 </li>
                                 <li>
                                     Features constraints: All the features may not be available in the first version of SkillUp and some features will need to be deferred to a future release.
