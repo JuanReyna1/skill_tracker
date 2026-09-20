@@ -153,7 +153,29 @@ function Sprint1() {
                     <div className="sprint-topic">
                         <h3>Constraints</h3>
                         <p>
-                            The SkillUp application has several constrains that might have an influence on its development and implementation. First of all, the project will have no budget at the moment, therefore, it will have to use whatever is available and free software or services. Second of all, the project will have to be done by the set deadline and therefore there will not be much time for developing and testing all the proposed features. Technology and resource constrains, such as available programming knowledge of the team, available hardware and software as well as external APIs or services, might also influence development. Also, some features might be postponed for later release due to limited time and resources. Thirdly, the application will have to secure user's account data and progress, taking into account any limitations from third party services.
+                             <ul>
+                                <li>
+                                    Budget: Everything is free for now
+                                </li>
+                                <li>
+                                    Timeline/schedule constraints: The project needs to be delivered within the project timeline set by the due date which restricts the time available for implementing and testing all the features.
+                                </li>
+                                <li>
+                                    Resource/technology constraints: There could be constraints relating to the programming skills, time, hardware, software, and use of external resources of the development team. Development team availability: The development must be done based on the availability of the development team.
+                                </li>
+                                <li>
+                                    Features constraints: All the features may not be available in the first version of SkillUp and some features will need to be deferred to a future release.
+                                </li>
+                                <li>
+                                    Content/data constraints: Learning materials, certifications, instructors, and activity details could be limited to what is available to the development team.
+                                </li>
+                                <li>
+                                    User privacy and security: The app must ensure that user accounts and progress data is secure. 
+                                </li>
+                                <li>
+                                    Third-party resource constraints: The features relying on third-party platforms will be subject to their availability and any changes in those services.
+                                </li>
+                            </ul>
                         </p>
                     </div>
 
