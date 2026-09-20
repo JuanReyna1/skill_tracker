@@ -151,6 +151,19 @@ function Sprint1() {
                     </div>
 
                     <div className="sprint-topic">
+                        <h3>Constraints</h3>
+                        <p>
+                            The project currently has no budget, which means that 
+                            it will have to use any available technology, software, 
+                            and other services. Moreover, the project has to be finished 
+                            within the set deadline, which could limit the time for testing 
+                            and implementation of all planned features. Technology limitations, 
+                            including the skills of developers, hardware, software, APIs, 
+                            and other services available, can also affect the process of development.
+                        </p>
+                    </div>
+
+                    <div className="sprint-topic">
                         <h3>Assumptions</h3>
                         <p>
                             <ul>
