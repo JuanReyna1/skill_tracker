@@ -128,6 +128,19 @@ function Sprint1() {
                     </div>
 
                     <div className="sprint-topic">
+                        <h3>Business Objective</h3>
+                        <p>
+                            The project addresses several challenges people face when trying to learn or improve a skill, including lack of motivation, difficulty getting started, limited access to resources or instructors, lack of feedback, difficulty tracking progress, and limited opportunities to connect with others who share similar goals. It also creates an opportunity to provide users with a clearer path for developing skills and discovering new recreational activities or professional interests. 
+                        </p>
+                        <p>
+                            The platform is expected to provide value through skill development, certifications, progress tracking, access to learning resources, guidance, community interaction, and increased motivation. It can also create opportunities for instructors to offer paid services, users to discover relevant products and resources, and institutions to provide certifications or educational programs. Overall, the platform aims to make skill development more accessible, organized, social, and rewarding. 
+                        </p>
+                        <p>
+                            The project supports multiple stakeholder groups. Users can track their skills, earn certifications, learn new things, connect with communities, access instructors and resources, receive feedback and motivation, and discover recreational activities. Instructors can teach a larger audience, earn income or receive donations, build their reputation, and potentially obtain certifications through institutions. Product suppliers can promote relevant products, improve visibility, and reach interested customers. Institutions can provide certifications, offer educational opportunities, promote their programs, and gain insight into user progress. Investors can receive recognition and potentially benefit from platform revenue. Developers can gain experience and grow professional community, while organizations such as UTEP Computer Science Department can use the project to support student learning and skill development. 
+                        </p>
+                    </div>
+
+                    <div className="sprint-topic">
                         <h3>Scope Boundary</h3>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -140,10 +153,23 @@ function Sprint1() {
                     <div className="sprint-topic">
                         <h3>Assumptions</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Vestibulum id ligula porta felis euismod
-                            semper. Morbi leo risus, porta ac consectetur ac,
-                            vestibulum at eros.
+                            <ul>
+                                <li>
+                                    Users have different methods for measuring progress depending on the type of recreational activity.
+                                </li>
+                                <li>
+                                    Users may participate in multiple recreational activities at once.  
+                                </li>
+                                <li>
+                                    Users will have varying experience levels across activities. 
+                                </li>
+                                <li>
+                                    Users will benefit from having recreational activities, goals, and progress organized within a centralized system. 
+                                </li>
+                                <li>
+                                    Social support, reminders, or accountability may help some users remain engaged with their activities. 
+                                </li>
+                            </ul>
                         </p>
                     </div>
 
