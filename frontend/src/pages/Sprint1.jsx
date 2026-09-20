@@ -153,7 +153,7 @@ function Sprint1() {
                     <div className="sprint-topic">
                         <h3>Constraints</h3>
                         <p>
-                            The project currently has no budget, which means that it will have to use any available technology, software, and other services. Moreover, the project has to be finished within the set deadline, which could limit the time for testing and implementation of all planned features. Technology limitations, including the skills of developers, hardware, software, APIs, and other services available, can also affect the process of development.
+                            The SkillUp application has several constrains that might have an influence on its development and implementation. First of all, the project will have no budget at the moment, therefore, it will have to use whatever is available and free software or services. Second of all, the project will have to be done by the set deadline and therefore there will not be much time for developing and testing all the proposed features. Technology and resource constrains, such as available programming knowledge of the team, available hardware and software as well as external APIs or services, might also influence development. Also, some features might be postponed for later release due to limited time and resources. Thirdly, the application will have to secure user's account data and progress, taking into account any limitations from third party services.
                         </p>
                     </div>
 
