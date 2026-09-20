@@ -13,7 +13,7 @@ const teamMembers = [
         role: "Software Engineer",
         bio: "I am a software engineer with a strong background in web development and user experience design. I enjoy creating intuitive and visually appealing interfaces.",
         ownership: "I am responsible for the front-end development and user experience design of the project.",
-        image: null,
+        image: "/profile_images/KarinaRivera.jpg",
     },
     {
         name: "Team Member 3",
