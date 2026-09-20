@@ -31,9 +31,9 @@ const teamMembers = [
     },
     {
         name: "Ricardo Morales Perez",
-        role: "Role / Position",
+        role: "Tester & Checker",
         bio: "I'm a UTEP student pursuing a Bachelor's degree in Computer Science, with the possibility of pursuing a Ph.D. in Computer Science in the future. I'm interested in learning web development, and I enjoy traveling, reading, trying new things, and having fun.",
-        ownership: "Project responsibility goes here.",
+        ownership: "I'am responsible to make sure our webiste runs and works effectively and make sure there are no error and/or problems. If an eroor happens I tell one our members to fix that issue",
         image: "/profile_images/RickPhoto.jpg"
     },
 ];
