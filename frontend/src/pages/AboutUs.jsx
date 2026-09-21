@@ -4,8 +4,8 @@ const teamMembers = [
     {
         name: "Isaac Padilla",
         role: "Software Engineer",
-        bio: "Isaac is a full-stack software engineer with experience in web development, database management, and cloud computing. He is passionate about building scalable and efficient software solutions.",
-        ownership: "I am responsible for the front-end development, database management, and cloud computing aspects of the project.",
+        bio: "I am a full-stack software engineer with experience in web development and database management. I focus on building scalable and efficient software solutions.",
+        ownership: "I am responsible for the front-end development, and business management.",
         image: "/profile_images/IsaacPadilla.jpeg",
     },
     {
