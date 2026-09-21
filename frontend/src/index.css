@@ -590,3 +590,18 @@ body {
 [data-theme="dark"] .sprint-section + .sprint-section {
   border-top-color: var(--surface);
 }
+
+.scope_cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+}
+
+.scope_cols h4 {
+  text-align: center;
+}
+
+.scope_cols li {
+  margin-bottom: 12px;
+}

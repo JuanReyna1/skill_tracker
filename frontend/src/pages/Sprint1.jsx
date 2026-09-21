@@ -142,12 +142,48 @@ function Sprint1() {
 
                     <div className="sprint-topic">
                         <h3>Scope Boundary</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Integer posuere erat a ante venenatis dapibus
-                            posuere velit aliquet. Donec id elit non mi porta
-                            gravida at eget metus.
-                        </p>
+                        <div class="scope_cols">
+                            <div class="col">
+                            <h4>In</h4>
+                            <ul>
+                                <li>Accountability Partner</li>
+                                <li>Q/A Threads</li>
+                                <li>Progress Tracking</li>
+                                <li>Earn and Obtain Certificates</li>
+                                <li>Learning Resources</li>
+                                <li>Social media posting</li>
+                                <li>Log Activities</li>
+                                <li>Goal settings</li>
+                                <li>Instructor search directory</li>
+                                <li>Instructor profiles</li>
+                                <li>Instructor booking/request</li>
+                            </ul>
+                            </div>
+                            <div class="col">
+                            <h4>Out</h4>
+                            <ul>
+                                <li>Cost estimator for classes/gear</li>
+                                <li>Expense log per activity</li>
+                                <li>Spending analytics dashboard</li>
+                                <li>Membership/subscription tracker</li>
+                                <li>Monthly budget alerts</li>
+                                <li>Price comparison for instructors/gear</li>
+                                <li>Savings goal for upcoming events</li>
+                            </ul>
+                            </div>
+                            <div class="col">
+                            <h4>Deferred</h4>
+                            <ul>
+                                <li>Sharable progression cards</li>
+                                <li>Activity Feed</li>
+                                <li>Integration with wearable fitness</li>
+                                <li>Activity Leaderboards</li>
+                                <li>Activity Quests</li>
+                                <li>Activity Event posting (Local/Non-Local)</li>
+                                <li>Local businesses tied to community hubs</li>
+                            </ul>
+                            </div>
+                        </div>
                     </div>
 
                     <div className="sprint-topic">
