@@ -23,11 +23,11 @@ const teamMembers = [
         image: "/profile_images/JuanReyna.jpeg",
     },
     {
-        name: "Team Member 4",
-        role: "Role / Position",
-        bio: "Short bio about this team member goes here.",
-        ownership: "Project responsibility goes here.",
-        image: null,
+        name: "Jonathan Hernandez",
+        role: "DevOps",
+        bio: "Jonathan is a DevOps engineer with a background in web development and general management. He focuses on automating processes and streamlining workflows to ensure that software runs smoothly from development to launch.",
+        ownership: "I am responsible for managing how our project is built and deployed, maintaining the servers, and making sure our code updates go live smoothly.",
+        image: "/profile_images/JonathanHernandez.jpg",
     },
     {
         name: "Ricardo Morales Perez",
