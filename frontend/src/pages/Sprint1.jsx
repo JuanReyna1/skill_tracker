@@ -240,15 +240,35 @@ function Sprint1() {
                             </ul>
                         </p>
                     </div>
-
                     <div className="sprint-topic">
-                        <h3>Stakeholder Register</h3>
+                        <h3>Success Criteria</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Praesent commodo cursus magna, vel scelerisque
-                            nisl consectetur et. Nullam id dolor id nibh
-                            ultricies vehicula ut id elit.
-                        </p>
+                            <ul>
+                                <li>
+                                    Successful launch resulting in an influx of new users joining the platform, active user engagement across the platform, and a continuous expansion of the user base.
+                                </li>
+
+                                <li>
+                                    Successful execution of the instructor marketplace, resulting in an active user booking paid session and having sustainable revenue through the platform.
+                                </li>
+
+                                <li>
+                                    Users have a measurable improvement in their skills development, as well as evidence of their goal setting, progress tracking, and successful attainment of certificates.
+                                </li>
+
+                                <li>
+                                    The milestones for the project and other deliverables are completed within schedule, with any unexpected delays being managed correctly to minimize the possible consequences of a delay.
+                                </li>
+
+                                <li>
+                                    High retention rates, where users consistently log activities and users provide enough feedback for future improvements for the platform.
+                                </li>
+
+                                <li>
+                                    Platform has a good influx of instructors willing to work for the platform and organization willing to give certifications for the users to obtain.
+                                </li>
+                            </ul>
+                        </p>    
                     </div>
                 </section>
 
