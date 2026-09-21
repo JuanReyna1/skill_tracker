@@ -18,7 +18,7 @@ const teamMembers = [
     {
         name: "Juan Reyna",
         role: "Software Architect",
-        bio: "I am a UTEP student, pursuing my Master's in Software Engineering. Has some experience in web development, database management, and game development. I am passionate about building and delivering video games for others to enjoy.",
+        bio: "I'm a software architect with a background in web development, database management, and some management. I focus on designing scalable, well structured systems that are reliable from development through launch.",
         ownership: "I am responsile for our software's technical direction, turning business needs into solid, scalable systems.",
         image: "/profile_images/JuanReyna.jpeg",
     },
