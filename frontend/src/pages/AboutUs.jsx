@@ -18,16 +18,16 @@ const teamMembers = [
     {
         name: "Juan Reyna",
         role: "Software Architect",
-        bio: "I am a UTEP student, pursuing my Master's in Software Engineering. Has some experience in web development, database management, and game development. I am passionate about building and delivering video games for others to enjoy.",
+        bio: "I'm a software architect with a background in web development, database management, and some management. I focus on designing scalable, well structured systems that are reliable from development through launch.",
         ownership: "I am responsile for our software's technical direction, turning business needs into solid, scalable systems.",
         image: "/profile_images/JuanReyna.jpeg",
     },
     {
-        name: "Team Member 4",
-        role: "Role / Position",
-        bio: "Short bio about this team member goes here.",
-        ownership: "Project responsibility goes here.",
-        image: null,
+        name: "Jonathan Hernandez",
+        role: "DevOps",
+        bio: "Jonathan is a DevOps engineer with a background in web development and general management. He focuses on automating processes and streamlining workflows to ensure that software runs smoothly from development to launch.",
+        ownership: "I am responsible for managing how our project is built and deployed, maintaining the servers, and making sure our code updates go live smoothly.",
+        image: "/profile_images/JonathanHernandez.jpg",
     },
     {
         name: "Ricardo Morales Perez",
