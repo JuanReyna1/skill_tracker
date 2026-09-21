@@ -16,11 +16,11 @@ const teamMembers = [
         image: "/profile_images/KarinaRivera.jpg",
     },
     {
-        name: "Team Member 3",
-        role: "Role / Position",
-        bio: "Short bio about this team member goes here.",
-        ownership: "Project responsibility goes here.",
-        image: null,
+        name: "Juan Reyna",
+        role: "Software Architect",
+        bio: "I am a UTEP student, pursuing my Master's in Software Engineering. Has some experience in web development, database management, and game development. I am passionate about building and delivering video games for others to enjoy.",
+        ownership: "I am responsile for our software's technical direction, turning business needs into solid, scalable systems.",
+        image: "/profile_images/JuanReyna.jpeg",
     },
     {
         name: "Team Member 4",
