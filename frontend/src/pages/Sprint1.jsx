@@ -89,8 +89,10 @@ function Sprint1() {
                     <div className="section-heading">
                         <h2>Business Strategy</h2>
                         <a
-                            href="/"
-                            download
+                            href="/documents/sprint1/Strategy_to_Project_Chain.pdf"
+                            download="Strategy_to_Project_Chain.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="pdf-button"
                         >
                             [PDF]
@@ -99,17 +101,64 @@ function Sprint1() {
 
                     <div className="sprint-topic">
                         <h3>The Strategy-to-Project Chain</h3>
+
+                        <h4>1. The Business Need</h4>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed posuere consectetur est at lobortis.
-                            Maecenas sed diam eget risus varius blandit sit amet
-                            non magna.
+                            Learning new skills is an important part of personal and professional development. Unfortunately individuals may find difficulties when trying to start a new activity to maintain motivation, organize their resources and track their progress over time.
+                        </p>
+                        <p>
+                            Our team’s research has found several challenges that individuals encounter when starting new recreational activities and personal learning goals. Interviewed participants described difficulties in finding relevant resources, remaining persistent and tracking their activities and achievements. Some participants depended on tracking by memory and lacked a formal tracking method. Other participants described that having limited time, financial constraints, and lack of experience prevented them from starting or continuing activities.
+                        </p>
+                        <p>
+                            The findings suggest an opportunity to develop a centralized platform that helps individuals organize their recreational activities, establish goals, track achievements, and access relevant resources.
                         </p>
 
+                        <h4>2. Existing Learning Platforms</h4>
                         <p>
-                            Aenean eu leo quam. Pellentesque ornare sem lacinia
-                            quam venenatis vestibulum. Cras justo odio, dapibus
-                            ac facilisis in, egestas eget quam.
+                            Existing platforms do show how digital services can combine resources, personal development, and community participation. For example, Skillshare provides access to classes, practical projects, certificates and opportunities for learners to share their work and receive feedback.
+                        </p>
+                        <p>
+                            Unlike platforms that primarily organize learning around predefined courses, SkillUp focuses on personalized skill development. Users can establish their own goals, track activities, and document achievements through a portfolio that reflects their development over time.
+                        </p>
+                        <p>
+                            Users are not required to follow a specific course or pursue a certification to benefit from the platform. They can track recreational activities, develop professional skills and record accomplishments based on their individual interests.
+                        </p>
+                        <p>
+                            SkillUp aims to provide a centralized environment where learning is treated as a continuous process rather than a series of completed courses. The platform serves as both a tool for developing skills, and a lasting record of users’ experiences, achievements, and growth.
+                        </p>
+
+                        <h4>3. The Business Objective</h4>
+                        <p>
+                            The primary business objective of SkillUp is to develop a centralized platform that makes skill development more accessible, organized, engaging, and rewarding.
+                        </p>
+                        <p>
+                            SkillUp aims to help users create personal learning goals, track their development across multiple activities, document their accomplishments, and discover relevant resources.
+                        </p>
+                        <p>
+                            The platform also intends to create an environment where users can connect with others who share similar interests, exchange knowledge, receive feedback and maintain motivation. SkillUp aims to support users from the initial exploration of a new activity through continued participation.
+                        </p>
+                        <p>
+                            The platform creates opportunities for additional stakeholder groups. Instructors may use SkillUp to reach interested learners and offer their services, while educational institutions and organizations may provide learning opportunities and certifications.
+                        </p>
+
+                        <h4>4. Expected Business Value</h4>
+                        <p>
+                            SkillUp's proposed business value extends beyond providing users with a tool for recording their activities.
+                        </p>
+                        <p>
+                            For individual users, the platform aims to provide greater visibility into their learning progress, easier access to educational resources, and opportunities to receive support from other learners.
+                        </p>
+                        <p>
+                            For instructors, SkillUp may provide a way to connect with individuals interested in developing specific skills and create opportunities to offer paid instructional services.
+                        </p>
+                        <p>
+                            For educational institutions and organizations, the platform may create opportunities to provide learning programs, certifications, and additional resources to interested users.
+                        </p>
+                        <p>
+                            Over time, these capabilities could support a business model based on connecting learners with instructors and other educational services. However, revenue generation, instructor participation, and user adoption remain potential outcomes rather than established results.
+                        </p>
+                        <p>
+                            The overall strategic objective is to create a platform that supports continued skill development while establishing opportunities for users, instructors, and educational organizations to participate in a shared learning environment.
                         </p>
                     </div>
                 </section>
