@@ -1,7 +1,7 @@
 const individualContributions = [
     {
         name: "Isaac Padilla",
-        role: "Software Engineer",
+        role: "Project Manager",
         date: "09/21/26",
         categories: [
             {
@@ -81,7 +81,7 @@ const individualContributions = [
     },
     {
         name: "Juan Reyna",
-        role: "Software Architect",
+        role: "Market Researcher",
         date: "09/21/26",
         categories: [
             {
@@ -104,7 +104,7 @@ const individualContributions = [
     },
     {
         name: "Jonathan Hernandez",
-        role: "DevOps",
+        role: "Market Researcher",
         date: "09/21/26",
         categories: [
             {

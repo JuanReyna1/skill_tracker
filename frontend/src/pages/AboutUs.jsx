@@ -3,7 +3,7 @@ import TeamMemberCard from "../components/TeamMemberCard";
 const teamMembers = [
     {
         name: "Isaac Padilla",
-        role: "Software Engineer",
+        role: "Project Manager",
         bio: "I am a full-stack software engineer with experience in web development and database management. I focus on building scalable and efficient software solutions.",
         ownership: "I am responsible for the front-end development, and business management.",
         image: "/profile_images/IsaacPadilla.jpeg",
@@ -17,14 +17,14 @@ const teamMembers = [
     },
     {
         name: "Juan Reyna",
-        role: "Software Architect",
+        role: "Market Researcher",
         bio: "I'm a software architect with a background in web development, database management, and some management. I focus on designing scalable, well structured systems that are reliable from development through launch.",
         ownership: "I am responsile for our software's technical direction, turning business needs into solid, scalable systems.",
         image: "/profile_images/JuanReyna.jpeg",
     },
     {
         name: "Jonathan Hernandez",
-        role: "DevOps",
+        role: "Market Researcher",
         bio: "Jonathan is a DevOps engineer with a background in web development and general management. He focuses on automating processes and streamlining workflows to ensure that software runs smoothly from development to launch.",
         ownership: "I am responsible for managing how our project is built and deployed, maintaining the servers, and making sure our code updates go live smoothly.",
         image: "/profile_images/JonathanHernandez.jpg",
