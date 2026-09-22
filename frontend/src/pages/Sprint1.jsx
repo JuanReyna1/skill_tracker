@@ -189,9 +189,9 @@ const individualContributions = [
                 ],
             },
             {
-                title: "Front-End Development",
+                title: "Project Requirements and Scope",
                 items: [
-                    "Worked on the scope boundary, including the In's, Out's, and Deferred's",
+                    "Worked on the scope boundary and requirements, including the In's, Out's, and Deferred's",
                     "Included the necessary features that will help support the idea of what SkillUp is",
                     "Left out unnecessary features that will not help achieve the goal of SkillUp",
                     "Deferred list for features that may help, but not top priority."
