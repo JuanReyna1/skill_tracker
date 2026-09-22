@@ -128,25 +128,36 @@ const individualContributions = [
     {
         name: "Ricardo Morales Perez",
         role: "Tester & Checker",
-        date: "09/21/26",
+        date: "09/20/26",
         categories: [
             {
-                title: "Business Strategy",
-                items: [],
+                title: "Website Testing",
+                items: [
+                    "I tested the website to make sure the website works perfectly by visiting every page of every section, making sure that no error occurs when going to a specific page.",
+                ],
             },
             {
-                title: "Front-End Development",
-                items: [],
-            },
-            {
-                title: "Market Research",
-                items: [],
+                title: "Issue Identification and Reporting",
+                items: [
+                    "For now, there aren’t any errors I detected that were on the website, but if the website does contain any errors, I make sure to tell my team to fix them.",
+                ],
             },
             {
                 title: "Additional Contributions",
-                items: [],
+                items: [
+                    "I oversaw doing the constraints part of Sprint 1 and adding any constraints about our website.",
+                ],
             },
         ],
+        reviewResponsibilities: [
+            "I reviewed that all the constraints were there and made sure there weren't any errors in the work.",
+        ],
+        aiDisclosure: {
+            toolUsed: "ChatGPT",
+            stage: "Constraints",
+            purpose: "Just to get more ideas to add for the constraints part of the assignment but the work is my own.",
+            changesOrRejected: "I improved my Constraints part because I felt it was short. So, I just used ChatGPT in order just to get more ideas and then I come up with my own ideas with example ChatGPT gave me.",
+        },
     },
 ];
 
@@ -574,6 +585,29 @@ function Sprint1() {
                                             )}
                                         </div>
                                     ))}
+
+                                    {member.reviewResponsibilities && member.reviewResponsibilities.length > 0 && (
+                                        <div className="contribution-section">
+                                            <h4>Review Responsibilities (What I Reviewed)</h4>
+                                            <ul className="contribution-bullets">
+                                                {member.reviewResponsibilities.map((item, i) => (
+                                                    <li key={i}>{item}</li>
+                                                ))}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {member.aiDisclosure && (
+                                        <div className="contribution-section">
+                                            <h4>AI Use Disclosure</h4>
+                                            <div className="ai-disclosure-details">
+                                                <p><strong>AI Tool Used:</strong> {member.aiDisclosure.toolUsed}</p>
+                                                <p><strong>PM AI Protocol Stage:</strong> {member.aiDisclosure.stage}</p>
+                                                <p><strong>Purpose of AI Use:</strong> {member.aiDisclosure.purpose}</p>
+                                                <p><strong>Changes or Rejected Output:</strong> {member.aiDisclosure.changesOrRejected}</p>
+                                            </div>
+                                        </div>
+                                    )}
                                 </div>
                             </div>
                         ))}

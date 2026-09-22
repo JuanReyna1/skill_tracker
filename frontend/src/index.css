@@ -709,3 +709,22 @@ body {
   font-style: italic;
   margin: 0.25rem 0 0.75rem 0;
 }
+
+.contribution-section {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px dashed #e5e7eb;
+}
+
+[data-theme="dark"] .contribution-section {
+  border-top-color: #27272a;
+}
+
+.ai-disclosure-details {
+  margin-top: 0.75rem;
+}
+
+.ai-disclosure-details p {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
