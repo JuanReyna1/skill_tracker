@@ -18,8 +18,8 @@ const teamMembers = [
     {
         name: "Juan Reyna",
         role: "Market Researcher",
-        bio: "I'm a software architect with a background in web development, database management, and some management. I focus on designing scalable, well structured systems that are reliable from development through launch.",
-        ownership: "I am responsile for our software's technical direction, turning business needs into solid, scalable systems.",
+        bio: "I'm a Market Researcher with a background in web development, database management, and some management. I focus on designing scalable, well structured systems that are reliable from development through launch.",
+        ownership: "I am responsible for uncovering the insights that shape our project's direction, turning user interviews and market signals into a solid, evidence-backed concept.",
         image: "/profile_images/JuanReyna.jpeg",
     },
     {
