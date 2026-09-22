@@ -3,27 +3,31 @@ import { useState, useEffect, useRef } from 'react';
 const showcaseItems = [
     {
         id: 1,
-        title: "Culinary Arts & Cooking",
-        description: "Master new recipes, track your cooking milestones, and level up your kitchen skills from amateur to chef.",
-        category: "Casual Hobbies"
+        title: "Your Unique Learning Path",
+        description: "We meet you exactly where you are. Forget one-size-fits-all courses—start new activities with less friction and build a personalized journey that fits your life.",
+        category: "Personalized Journey",
+        image: "Puzzle Piece 7588015.jpg"
     },
     {
         id: 2,
-        title: "Daily Reading Habits",
-        description: "Set reading goals, log your completed books, and build a consistent habit of learning and exploring new worlds.",
-        category: "Personal Growth"
+        title: "Build Your Achievement Portfolio",
+        description: "Progress can be hard to notice day-to-day. Gather your scattered milestones, photos, and notes into one beautiful portfolio so you can truly see how far you've come.",
+        category: "Track Progress",
+        image: "Soccer Image from Pixabay.jpg"
     },
     {
         id: 3,
-        title: "Business Management Qualifications",
-        description: "Advance your career with structured professional programs, track certifications, and validate your leadership skills.",
-        category: "Professional Development"
+        title: "Find Your Accountability Coach",
+        description: "Motivation is better together. Connect with friends, join Q/A threads, or find an accountability partner to check in on you and help you stay consistent.",
+        category: "Community",
+        image: "Recreational Activities Image.jpg"
     },
     {
         id: 4,
-        title: "Tech & Institutional Certifications",
-        description: "Partner with top institutions to earn recognized tech certifications. Level up your coding, design, and data analysis abilities.",
-        category: "Career Advancement"
+        title: "Get Expert Guidance",
+        description: "Need a little extra help testing the waters? Browse our directory to find expert instructors, book sessions, and get the personalized feedback you need to level up.",
+        category: "Support",
+        image: "Guitar Music Image.jpg"
     }
 ];
 
@@ -39,42 +43,47 @@ const backgroundImages = [
 ];
 
 function Home() {
-    const [activeLevel, setActiveLevel] = useState(1);
-    const itemRefs = useRef([]);
+    const [leveledUp, setLeveledUp] = useState(false);
+    const bottomRef = useRef(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        const index = itemRefs.current.indexOf(entry.target);
-                        if (index !== -1) {
-                            setActiveLevel(index + 1);
-                        }
+                        setLeveledUp(true);
                     }
                 });
             },
-            {
-                // Trigger when an item is somewhat central on the screen
-                rootMargin: '-30% 0px -30% 0px',
-                threshold: 0
-            }
+            { threshold: 0.1 }
         );
 
-        const currentRefs = itemRefs.current;
-        currentRefs.forEach((ref) => {
-            if (ref) observer.observe(ref);
-        });
+        if (bottomRef.current) {
+            observer.observe(bottomRef.current);
+        }
 
         return () => {
-            currentRefs.forEach((ref) => {
-                if (ref) observer.unobserve(ref);
-            });
+            if (bottomRef.current) {
+                observer.unobserve(bottomRef.current);
+            }
         };
     }, []);
 
     return (
         <main className="home-layout">
+            {leveledUp && (
+                <div className="level-up-toast">
+                    <div className="level-up-content">
+                        <span className="level-up-icon">⭐</span>
+                        <div className="level-up-text">
+                            <h3>Level Up!</h3>
+                            <p>You've explored the whole page. Time to start learning!</p>
+                        </div>
+                        <button className="level-up-close" onClick={() => setLeveledUp(false)}>×</button>
+                    </div>
+                </div>
+            )}
+
             <section className="hero-section">
                 <div className="hero-background-grid">
                     {backgroundImages.map((img, i) => (
@@ -93,43 +102,37 @@ function Home() {
                         <img src="/title-logo.png" alt="Skill Up" className="hero-title-img" />
                     </h1>
                     <p className="page-description hero-description">
-                        SkillUp helps you track your progress on whatever you want to learn. Whether that's everyday hobbies like cooking and reading, or career goals like learning new tools and earning certifications, SkillUp keeps you motivated and on track.
+                        SkillUp is a personalized skill-development platform designed to make learning more accessible, organized, engaging, and rewarding. Whether you're exploring a new hobby or developing professional skills, SkillUp helps you set personal goals, track your progress, and build a portfolio of your achievements.
                     </p>
                 </div>
             </section>
 
             <section className="showcase-section">
-                <div className="page-content">
-
-                <div className="showcase-container">
-                    <div className="showcase-sidebar">
-                        <div className="level-indicator-container">
-                            <h2 className="level-text">Level {activeLevel}</h2>
-                            <div className="level-progress-bar">
-                                <div 
-                                    className="level-progress-fill" 
-                                    style={{ height: `${(activeLevel / showcaseItems.length) * 100}%` }}
-                                ></div>
+                <div className="features-container">
+                    {showcaseItems.map((item, index) => (
+                        <div 
+                            key={item.id} 
+                            className={`feature-section ${index % 2 !== 0 ? 'reverse' : ''}`}
+                        >
+                            <div className="feature-content">
+                                <span className="feature-category">{item.category}</span>
+                                <h2 className="feature-title">{item.title}</h2>
+                                <p className="feature-description">{item.description}</p>
+                            </div>
+                            <div className="feature-image-wrapper">
+                                <img 
+                                    src={`/skill_images/${item.image}`} 
+                                    alt={item.title} 
+                                    className="feature-image" 
+                                />
                             </div>
                         </div>
-                    </div>
-
-                    <div className="showcase-content">
-                        {showcaseItems.map((item, index) => (
-                            <div 
-                                key={item.id} 
-                                className={`showcase-card ${activeLevel === index + 1 ? 'active' : ''}`}
-                                ref={(el) => (itemRefs.current[index] = el)}
-                            >
-                                <span className="showcase-card-category">{item.category}</span>
-                                <h3 className="showcase-card-title">{item.title}</h3>
-                                <p className="showcase-card-description">{item.description}</p>
-                            </div>
-                        ))}
-                    </div>
+                    ))}
                 </div>
-            </div>
             </section>
+            
+            {/* Invisible element at the bottom to trigger the easter egg */}
+            <div ref={bottomRef} style={{ height: '10px', width: '100%' }}></div>
         </main>
     );
 }
