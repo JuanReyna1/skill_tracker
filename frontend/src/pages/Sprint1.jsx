@@ -180,20 +180,29 @@ const individualContributions = [
         date: "09/21/26",
         categories: [
             {
-                title: "Business Strategy",
-                items: [],
+                title: "Market Research",
+                items: [
+                    "Collaborated with the team to design questions for phase 1 and phase 2",
+                    "Conducted 5 interviews regarding one of the domains, specifically the planner with photos as proof",
+                    "Conducted another set of 5 interviews regarding recreational activities",
+                    "Wrote the Top Pick Deep Dive, the reason why we chose to stick with SkillUp, along with the evidence from the interviews to support it."
+                ],
             },
             {
                 title: "Front-End Development",
-                items: [],
-            },
-            {
-                title: "Market Research",
-                items: [],
+                items: [
+                    "Worked on the scope boundary, including the In's, Out's, and Deferred's",
+                    "Included the necessary features that will help support the idea of what SkillUp is",
+                    "Left out unnecessary features that will not help achieve the goal of SkillUp",
+                    "Deferred list for features that may help, but not top priority."
+                ],
             },
             {
                 title: "Additional Contributions",
-                items: [],
+                items: [
+                    "Helped fill in missing content from the website",
+                    "Reviewed sprint 1 requirements for missing tasks"
+                ],
             },
         ],
     },
@@ -694,7 +703,7 @@ function Sprint1() {
                                 </div>
 
                                 <div className="contribution-body">
-                                    <h4>Individual Contributions (What I Owned)</h4>
+                                    <h4>Individual Contributions</h4>
 
                                     {member.categories.map((category) => (
                                         <div key={category.title} className="contribution-category">
