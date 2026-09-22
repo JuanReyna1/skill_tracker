@@ -10,8 +10,10 @@ const sprint1Documents = {
         { name: "Strategy_to_Project_Chain.pdf", label: "Strategy to Project Chain" }
     ],
     projectCharter: [
+        { name: "Project_Charter.pdf", label: "Project Charter" }
     ],
     individualContributions: [
+        { name: "SkillUpContributions.pdf", label: "Contributions"}
     ]
 };
 
