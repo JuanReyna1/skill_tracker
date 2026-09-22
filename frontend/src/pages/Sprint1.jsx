@@ -69,17 +69,55 @@ function Sprint1() {
 
                     <div className="sprint-topic">
                         <h3>What Didn't Work / What We Pivoted From</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Nullam quis risus eget urna mollis ornare vel
-                            eu leo. Aenean lacinia bibendum nulla sed
-                            consectetur.
-                        </p>
 
                         <p>
-                            Curabitur blandit tempus porttitor. Etiam porta sem
-                            malesuada magna mollis euismod. Donec ullamcorper
-                            nulla non metus auctor fringilla.
+                            During our initial research phase, our team explored several project ideas such as Budget Simulation, Picture Exploration, Item Holder, Planning and Scheduling with Forceful Pictures, and Recreational Activity Tracker. Through interviews and team discussions, we analyzed the problems each project could resolve and development challenges.
+                        </p>
+
+                        <h4>Budget Simulation</h4>
+                        <p>
+                            Budget Simulation was our team’s second choice. The concept focused on helping individuals evaluate purchases and predict purchase effects to make better financial decisions.
+                        </p>
+                        <p>
+                            Our interviews showed that participants had challenges related to budgeting, unexpected expenses, and determining if purchases were affordable. However, the responses did not give us a clear direction for creating a solution that could solve these problems.
+                        </p>
+                        <p>
+                            After discussing potential functionality, we decided to go with SkillUp instead. Although Budget Simulation would target an existing problem, we were missing a clear direction on how to provide a solution.
+                        </p>
+
+                        <h4>Picture Exploration</h4>
+                        <p>
+                            Our Picture Exploration project focused on helping users update and view recent images for locations they might want to explore. During our interviews, we found that most participants were already able to find recent information about places just by using Google.
+                        </p>
+                        <p>
+                            Even though some participants did find some outdated or inaccurate information, most were able to find the information through other services. Our research showed that there is no significant problem that requires a new platform from where to find updated information. As a result, we decided to abandon Picture Exploration.
+                        </p>
+
+                        <h4>Item Holder</h4>
+                        <p>
+                            Our Item Holder concept focused on providing a service that would allow individuals to reserve items they were interested in purchasing but could not immediately afford and obtain. Our interviews gave us useful insights into purchasing decisions and provided potential services that could help in these situations.
+                        </p>
+                        <p>
+                            After we evaluated the concept, we determined that there were significant financial and operational risks with potential fraudulent transactions, scams, and financial losses with reserving and holding items. Although the research found potential opportunities, we decided to abandon Item Holder due to financial risks.
+                        </p>
+
+                        <h4>Planning and Scheduling with Forceful Pictures</h4>
+                        <p>
+                            Our Planning and Scheduling with Forceful Pictures concept focused on helping individuals improve their time management and be accountable for completing their scheduled activities.
+                        </p>
+                        <p>
+                            After evaluating the concept and reviewing the interviews, we noticed that requiring users to provide photo evidence could become frustrating and inconvenient instead of encouraging. Our interviews also did not show a need for the system we wanted to work with. There was also no business potential, and as a result we decided to abandon this idea.
+                        </p>
+
+                        <h4>Pivots in Our Recreational Activity Tracker</h4>
+                        <p>
+                            Our original concept focused on providing users with a place to record recreational activities and personal accomplishments, such as books they read, recipes cooked, or progress on any recreational activity.
+                        </p>
+                        <p>
+                            Throughout interviews and discussions, we expanded the concept to include learning resources, instructor feedback, skill recognition, and opportunities to share with friends.
+                        </p>
+                        <p>
+                            We also reconsidered our original competitive approach after learning that some individuals preferred enjoying recreational activities without the pressure of comparing themselves to others. Instead, we focused on personalized progress tracking, individual achievements, and community support.
                         </p>
                     </div>
                 </section>
