@@ -216,17 +216,79 @@ function Sprint1() {
                     <div className="sprint-topic">
                         <h3>Top Pick: Deep Dive</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Praesent commodo cursus magna, vel scelerisque
-                            nisl consectetur et. Donec sed odio dui. Integer
-                            posuere erat a ante venenatis dapibus posuere velit
-                            aliquet.
+                            Across both phases of interviews focused on recreational activities and skill development, 
+                            the same set of struggles kept surfacing: people have trouble finding the right way to start 
+                            a new activity, staying motivated once life gets busy, recognizing their own progress, and 
+                            keeping any record of what they've actually accomplished. These four roadblocks, more than any 
+                            single complaint, are what convinced us SkillUp, an app built around personalized learning journeys 
+                            and achievement portfolios, was the right call.
                         </p>
 
                         <p>
-                            Maecenas faucibus mollis interdum. Cras mattis
-                            consectetur purus sit amet fermentum. Vestibulum id
-                            ligula porta felis euismod semper.
+                            Getting started is harder than it looks, due to several participants pointing to the starting phase 
+                            itself as the biggest barrier, not a lack of interest. One participant said the volume of information 
+                            online made it hard to "siphon through the right information" to find what they needed. Another person 
+                            said they lose interest when an activity has too many setup steps before reaching "the fun stuff." A 
+                            third pointed to cost and material barriers, needing to buy supplies like canvas and paint before they 
+                            could even try painting. A fourth described feeling embarrassed to be a beginner and unsure whether a 
+                            paid beginner class was worth it just to "test the waters." These are different forms of the same 
+                            problem, people want a lower friction on ramp into a new activity.
+                        </p>
+
+                        <p>
+                            Progress is hard to see while you're in it is a recurring theme that participants don't track progress 
+                            formally but importantly, this wasn't always framed as a problem they wanted solved. Several described 
+                            progress as something they only notice in hindsight. One participant called it a "lagging indicator," 
+                            noticing changes in strength or how clothes fit only after weeks of consistency, without any real-time 
+                            system to show the actual progression happening. Another said, "sometimes you don't see it until you 
+                            are done with it," and described stopping to reflect as their own informal method of recognizing what 
+                            they'd accomplished. This suggests the opportunity isn't necessarily "add a tracker where none exists" 
+                            some participants already have informal ways of noticing progress (comparing current work to past work,
+                            remembering if something felt faster this time). The gap is more that these methods are inconsistent 
+                            and easy to lose track of, not that people have literally no way of understanding their own growth.
+                        </p>
+
+                        <p>
+                            Motivation is also about social, not just personal, several participants directly credited another 
+                            person with keeping them consistent a workout partner who "helps maintain their consistency," a 
+                            sibling they joined on a weight-loss journey, co-workers who eventually got them into golf, friends 
+                            whose "encouragement has consistently kept them motivated." On the flip side, participants also 
+                            described losing motivation when a community fell apart. For example, when a weekly organizer in the 
+                            community has relocated. Another example from our interviews, when competition made an activity stop 
+                            feeling fun, where an interviewee felt that the sport became too competitive, however, came back when 
+                            they found a less competitive environment. It points toward SkillUp including some kind of community 
+                            or accountability layer, not just a personal log.
+                        </p>
+
+                        <p>
+                            People keep informal records just not ones built for this. A few participants already had some 
+                            version of a record system in place, writing achievements and goals in a notebook and checking back 
+                            on it, keeping a running playlist of songs learned on guitar, or simply pointing to a finished piece, 
+                            such as a painting or a completed cosplay that took six months, as the record of the activity itself. 
+                            It would be an overstatement to say these participants have no system what they don't have is anything 
+                            that keeps that record accessible, connects it across different activities, or makes it easy to look 
+                            back on. 
+                        </p>
+
+                        <p>
+                            Where reminders and scheduling fit, one participant, describing a time they stopped attending dance 
+                            classes as a beginner, specifically suggested a system that could recognize they were new to an 
+                            activity, remind them roughly 30 minutes before a scheduled session, and follow up if they didn't 
+                            show something they compared to an "accountability coach." That response, along with the broader 
+                            pattern of people losing momentum once responsibilities like work or school took over, is what 
+                            pointed us toward exploring reminders and scheduling as a feature. We're treating this as a direction 
+                            worth building toward rather than a confirmed fix, one participant's proposed solution isn't the same 
+                            as evidence that reminders alone solve the consistency problem, and we don't have interview data 
+                            showing that a reminder would have kept these participants engaged.
+                        </p>
+
+                        <p>
+                            Taken together, this research is what shaped SkillUp's two core pillars, a personalized learning 
+                            journey that meets people where they are when starting something new, rather than assuming a single 
+                            onboarding path works for every activity, and an achievement portfolio that gives structure to the 
+                            achievements, milestones, and informal records participants are already keeping in scattered places 
+                            such as notebooks, playlists, phone galleries, finished projects, without asking them to adopt an 
+                            entirely new habit from scratch.
                         </p>
                     </div>
 
