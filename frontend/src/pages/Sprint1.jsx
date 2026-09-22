@@ -54,29 +54,29 @@ const individualContributions = [
         date: "09/21/26",
         categories: [
             {
-                title: "Business Strategy",
-                items: [
-                    // Add bullet points here
-                ],
-            },
-            {
                 title: "Front-End Development",
                 items: [
-                    // Add bullet points here
+                    "Initialized the file structure and established the overall structure of the website.",
+                    "Created the navigation bar and the pages accessible through it.",
+                    "Structured the Sprint 1 page to include all the necessary sections and files."
                 ],
             },
             {
-                title: "Market Research",
+                title: "User Experience Design",
                 items: [
-                    // Add bullet points here
+                    "Created a website with a clean and modern interface that allows users to switch between light and dark modes based on their preferences.",
+                    "Contributed to the initial layout of the About Us page to display information about all team members.",
+                    "To improve the overall user experience, I organized all sprint pages into a dropdown menu within the navigation bar to prevent the navigation bar from becoming too crowded. This makes it easier for users to navigate to their desired sprint page while keeping all sprint pages easily accessible.",
+                    "For the Sprint 1 page, I added a secondary navigation bar to make it easier for users to navigate between the different sections within the page. "
                 ],
             },
             {
                 title: "Additional Contributions",
                 items: [
-                    // Add bullet points here
+                    "During the market research phase, I contributed to developing interview questions for our second highest-ranked project idea, the Budget Simulator.",
+                    "I also conducted 10 different interviews and analyzed the responses to help the team make a final project selection."
                 ],
-            },
+            }
         ],
     },
     {
