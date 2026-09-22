@@ -212,20 +212,25 @@ const individualContributions = [
         date: "09/21/26",
         categories: [
             {
-                title: "Business Strategy",
-                items: [],
-            },
-            {
-                title: "Front-End Development",
-                items: [],
-            },
-            {
                 title: "Market Research",
-                items: [],
+                items: [
+                    "Worked with the team to develop and refine the interview questions used throughout Phase 1 and Phase 2 of our market research.",
+                    "Conducted 5 interviews during Phase 1 focused on recreation activities to better understand people's experiences, motivations, difficulties, and how they currently approach recreational activities.",
+                    "Conducted another 5 interviews during Phase 2 focused on recreational activities to gather additional feedback and further validate the direction or vision of our idea."
+                ],
+            },
+            {
+                title: "Charter Success Criteria",
+                items: [
+                    "Wrote the Success Criteria section within the Project Charter.",
+                    "Helped define what would need to be achieved for SkillUp to successfully meet the goals established through our research and project planning."
+                ],
             },
             {
                 title: "Additional Contributions",
-                items: [],
+                items: [
+                    "Wrote the Aggregate Findings section, bringing together the research from our different ideas, interviews, and product comparisons to explain the patterns we found and how we narrowed our ideas down to the SkillUp concept."
+                ],
             },
         ],
     },
@@ -298,19 +303,60 @@ function Sprint1() {
                     <div className="sprint-topic">
                         <h3>Aggregate Findings</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip
-                            ex ea commodo consequat.
+                            We brainstormed ideas across many different topics ranging from medicine, 
+                            education, recreational activates, exploration, budgeting, business, 
+                            video gaming, and many others. As we narrowed down based on our 
+                            preferences and the potential we saw, we selected five core ideas: 
+                            a Budget Simulation, Recreational Activity Tracker, Item Holder, 
+                            Picture Exploration, and Planning and Scheduling concept. Each idea 
+                            started from a general problem or opportunity that we thought could 
+                            be useful to people, whether that meant improving something that already 
+                            existed, adding features to an existing type of application, or 
+                            creating a new way to engage users.
                         </p>
 
                         <p>
-                            Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur sint occaecat cupidatat non proident, sunt
-                            in culpa qui officia deserunt mollit anim id est
-                            laborum.
+                            After we developed the main ideas for each concept, we began to 
+                            interview people to get a better understanding of whether these problems 
+                            existed and how people currently experienced and handled these problems. 
+                            The interviews helped us find which ideas really connected to people's 
+                            experiences and see which ideas could be useful if a solution was found. 
+                            After comparing the results from the different ideas and the feedback 
+                            from our interviews, the Recreational Activity Tracker and Budget 
+                            Simulation stood out as the two concepts that generated the most 
+                            useful discussion and potential for further development.
+                        </p>
+
+                        <p>
+                            Eventually, the one that showed different but useful patterns was 
+                            the recreational activity tracker interview. People often discovered 
+                            new activities through friends, social media, or other forms of 
+                            online content, while continuing an activity depended on factors 
+                            such as time, motivation, and personal circumstances. When it came 
+                            to the tracking feature, the interviews suggested that people did 
+                            not necessarily want a highly rigid system. Instead, they often 
+                            recognized their progress through personal milestones, completed 
+                            projects, photos, or simply remembering what they had accomplished. 
+                            The research also showed that other people could influence participation, 
+                            including friends, groups, and communities.
+                        </p>
+
+                        <p>
+                            We began to come up with different features that could help users 
+                            discover, organize, and track their recreational activities while also 
+                            giving them ways to recognize their progress. We also explored different 
+                            ways this new platform could bring income without relying only on the 
+                            basic tracking feature. One of our main ideas was to allow instructors 
+                            or users to create and offer classes related to different activities. 
+                            Another was to provide users with the ability to pay for access to courses 
+                            or certifications offered through different institutions. This all led 
+                            to the first big change in the initial vision we had for this last idea 
+                            we decided to expand upon. Hence, we realize that the culmination of 
+                            ideas we had gather for this project became something more than a 
+                            simple tracker and we decided to finally give a name and a purpose to 
+                            said platform and we came up with SkillUp a personalized skill-development 
+                            platform designed to make learning more accessible, organized, 
+                            engaging, and rewarding.
                         </p>
                     </div>
 
