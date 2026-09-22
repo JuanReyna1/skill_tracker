@@ -1,3 +1,98 @@
+import { useState, useRef, useEffect } from 'react';
+
+const sprint1Documents = {
+    marketResearch: [
+        { name: "Interviews1.pdf", label: "Interviews Part 1" },
+        { name: "Interviews2.pdf", label: "Interviews Part 2" }
+    ],
+    businessStrategy: [
+        { name: "Strategy_to_Project_Chain.pdf", label: "Strategy to Project Chain" }
+    ],
+    projectCharter: [
+    ],
+    individualContributions: [
+    ]
+};
+
+const DownloadMenu = ({ files, sectionPath }) => {
+    const [isOpen, setIsOpen] = useState(false);
+    const menuRef = useRef(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setIsOpen(false);
+            }
+        };
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => document.removeEventListener('mousedown', handleClickOutside);
+    }, []);
+
+    if (!files || files.length === 0) {
+        return (
+            <button className="pdf-button" disabled>
+                No Files
+            </button>
+        );
+    }
+
+    const handleDownloadAll = () => {
+        files.forEach((file, index) => {
+            setTimeout(() => {
+                const link = document.createElement('a');
+                link.href = `${sectionPath}/${file.name}`;
+                link.download = file.name;
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            }, index * 200);
+        });
+        setIsOpen(false);
+    };
+
+    if (files.length === 1) {
+        return (
+            <a
+                href={`${sectionPath}/${files[0].name}`}
+                download={files[0].name}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pdf-button"
+            >
+                Download PDF
+            </a>
+        );
+    }
+
+    return (
+        <div className="download-dropdown" ref={menuRef}>
+            <button className="pdf-button" onClick={() => setIsOpen(!isOpen)}>
+                Files ▾
+            </button>
+            {isOpen && (
+                <div className="download-menu">
+                    <button onClick={handleDownloadAll} className="download-item download-all">
+                        Download All
+                    </button>
+                    {files.map(file => (
+                        <a
+                            key={file.name}
+                            href={`${sectionPath}/${file.name}`}
+                            download={file.name}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="download-item"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            {file.label || file.name}
+                        </a>
+                    ))}
+                </div>
+            )}
+        </div>
+    );
+};
+
 const individualContributions = [
     {
         name: "Isaac Padilla",
@@ -185,13 +280,10 @@ function Sprint1() {
                 <section id="market-research" className="sprint-section">
                     <div className="section-heading">
                         <h2>Market Research</h2>
-                        <a
-                            href="/"
-                            download
-                            className="pdf-button"
-                        >
-                            [PDF]
-                        </a>
+                        <DownloadMenu 
+                            files={sprint1Documents.marketResearch} 
+                            sectionPath="/documents/sprint1/MarketResearch" 
+                        />
                     </div>
                 
                     <div className="sprint-topic">
@@ -351,15 +443,10 @@ function Sprint1() {
                 <section id="business-strategy" className="sprint-section">
                     <div className="section-heading">
                         <h2>Business Strategy</h2>
-                        <a
-                            href="/documents/sprint1/Strategy_to_Project_Chain.pdf"
-                            download="Strategy_to_Project_Chain.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="pdf-button"
-                        >
-                            [PDF]
-                        </a>
+                        <DownloadMenu 
+                            files={sprint1Documents.businessStrategy} 
+                            sectionPath="/documents/sprint1/BusinessStrategy" 
+                        />
                     </div>
 
                     <div className="sprint-topic">
@@ -430,13 +517,10 @@ function Sprint1() {
                 <section id="project-charter" className="sprint-section">
                     <div className="section-heading">
                         <h2>Project Charter</h2>
-                        <a
-                            href="/"
-                            download
-                            className="pdf-button"
-                        >
-                            [PDF]
-                        </a>
+                        <DownloadMenu 
+                            files={sprint1Documents.projectCharter} 
+                            sectionPath="/documents/sprint1/ProjectCharter" 
+                        />
                     </div>
 
                     <div className="sprint-topic">
@@ -588,13 +672,10 @@ function Sprint1() {
                 <section id="individual-contributions" className="sprint-section">
                     <div className="section-heading">
                         <h2>Individual Contributions</h2>
-                        <a
-                            href="/"
-                            download
-                            className="pdf-button"
-                        >
-                            [PDF]
-                        </a>
+                        <DownloadMenu 
+                            files={sprint1Documents.individualContributions} 
+                            sectionPath="/documents/sprint1/IndividualContributions" 
+                        />
                     </div>
 
                     <div className="contributions-list">

@@ -516,21 +516,128 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.4rem 0.75rem;
-  color: var(--purple);
-  font-size: 1rem;
-  font-weight: 700;
-  text-decoration: underline;
-
+  padding: 0.5rem 1.25rem;
+  background-color: var(--purple);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  border-radius: 9999px; /* Fully rounded pill shape */
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(124, 58, 237, 0.25);
   transition:
       background-color 0.2s ease,
-      color 0.2s ease,
+      box-shadow 0.2s ease,
       transform 0.2s ease;
 }
 
 .pdf-button:hover {
+  background-color: var(--purple-dark);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.35);
+}
+
+.pdf-button:disabled {
+  background-color: var(--surface);
+  color: var(--text-secondary);
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
+
+[data-theme="dark"] .pdf-button {
+  background-color: var(--purple);
+  color: #ffffff;
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.25);
+}
+
+[data-theme="dark"] .pdf-button:hover {
+  background-color: var(--purple-light);
+  color: #09090b;
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
+}
+
+[data-theme="dark"] .pdf-button:disabled {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--text-secondary);
+  box-shadow: none;
+}
+
+/* Download Dropdown */
+.download-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.download-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 0.5rem;
+  background-color: var(--background);
+  border: 1px solid var(--surface);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+[data-theme="dark"] .download-menu {
+  border-color: #27272a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.download-item {
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 0.95rem;
+  text-align: left;
+  background: none;
+  border: none;
+  border-bottom: 1px solid var(--surface);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.download-item:last-child {
+  border-bottom: none;
+}
+
+.download-item:hover {
+  background-color: var(--surface);
+}
+
+.download-item.download-all {
+  font-weight: 700;
+  color: var(--purple);
+  background-color: rgba(124, 58, 237, 0.05);
+}
+
+.download-item.download-all:hover {
+  background-color: rgba(124, 58, 237, 0.1);
+}
+
+[data-theme="dark"] .download-item {
+  border-bottom-color: #27272a;
+}
+
+[data-theme="dark"] .download-item:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="dark"] .download-item.download-all {
   color: var(--purple-light);
-  transform: translateY(-1px);
+  background-color: rgba(139, 92, 246, 0.1);
+}
+
+[data-theme="dark"] .download-item.download-all:hover {
+  background-color: rgba(139, 92, 246, 0.15);
 }
 
 /* Sprint Pages - Dark Mode */
