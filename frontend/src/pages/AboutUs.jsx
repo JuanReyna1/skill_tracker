@@ -25,8 +25,8 @@ const teamMembers = [
     {
         name: "Jonathan Hernandez",
         role: "Market Researcher",
-        bio: "Jonathan is a DevOps engineer with a background in web development and general management. He focuses on automating processes and streamlining workflows to ensure that software runs smoothly from development to launch.",
-        ownership: "I am responsible for managing how our project is built and deployed, maintaining the servers, and making sure our code updates go live smoothly.",
+        bio: "Jonathan is a market researcher with a background in web development, and general management. He focuses on gathering user insights, conducting interviews, and streamlining research findings to ensure that projects align smoothly with real user needs.",
+        ownership: "I focus on gathering information and market insights that we can use for the project, conducting user interviews, evaluating potential product directions, and analyzing user feedback to guide our ongoing development and strategy.",
         image: "/profile_images/JonathanHernandez.jpg",
     },
     {
