@@ -1,9 +1,10 @@
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, lazy } from 'react';
 
 const sprint1Documents = {
     marketResearch: [
         { name: "Interviews1.pdf", label: "Interviews Part 1" },
-        { name: "Interviews2.pdf", label: "Interviews Part 2" }
+        { name: "Interviews2.pdf", label: "Interviews Part 2" },
+        { name: "Market_Research.pdf", label: "Market Research"}
     ],
     businessStrategy: [
         { name: "Strategy_to_Project_Chain.pdf", label: "Strategy to Project Chain" }
@@ -597,12 +598,12 @@ function Sprint1() {
                             <div class="col">
                             <h4>In</h4>
                             <ul>
+                                <li>Friend/Follower System</li>
                                 <li>Accountability Partner</li>
                                 <li>Q/A Threads</li>
                                 <li>Progress Tracking</li>
-                                <li>Earn and Obtain Certificates</li>
                                 <li>Learning Resources</li>
-                                <li>Social media posting</li>
+                                <li>Activity Event Posting (Local/Non-local)</li>
                                 <li>Log Activities</li>
                                 <li>Goal settings</li>
                                 <li>Instructor search directory</li>
@@ -630,8 +631,9 @@ function Sprint1() {
                                 <li>Integration with wearable fitness</li>
                                 <li>Activity Leaderboards</li>
                                 <li>Activity Quests</li>
-                                <li>Activity Event posting (Local/Non-Local)</li>
+                                <li>Social Media Posting</li>
                                 <li>Local businesses tied to community hubs</li>
+                                <li>Earn and Obtain Certificates</li>
                             </ul>
                             </div>
                         </div>
