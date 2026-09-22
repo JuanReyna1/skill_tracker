@@ -1,3 +1,155 @@
+const individualContributions = [
+    {
+        name: "Isaac Padilla",
+        role: "Software Engineer",
+        date: "09/21/26",
+        categories: [
+            {
+                title: "Business Strategy",
+                items: [
+                    "Wrote the Strategy-to-Project Chain section.",
+                    {
+                        text: "Collaborated with team to brainstorm Project Charter’s Business Objective section.",
+                        subItems: [
+                            "Gathered and organized the team’s ideas into a structured Business Objective section for the Project Charter.",
+                        ],
+                    },
+                ],
+            },
+            {
+                title: "Front-End Development",
+                items: [
+                    "Developed the Home Page for the SkillUp Living Project Portal based on my initial design ideas.",
+                    {
+                        text: "Added my assigned sections to their corresponding website pages.",
+                        subItems: [
+                            "Added Strategy-to-Project Chain and Market Research content to site.",
+                        ],
+                    },
+                    "Added my information on the About Us page.",
+                    "Added individual contributions section.",
+                ],
+            },
+            {
+                title: "Market Research",
+                items: [
+                    "Collaborated with the team to develop interview questions for the Recreational Activity Tracker project.",
+                    "Five interviews with potential users about recreational activities, motivation, progress tracking, and personal development.",
+                    "Five interviews for the Picture Exploration project.",
+                    "Wrote the “What Didn’t Work / What You Pivoted From” section, documenting abandoned ideas, findings and changes to original SkillUp project.",
+                ],
+            },
+            {
+                title: "Additional Contributions",
+                items: [
+                    "Assigned tasks and responsibilities to team members.",
+                    "Reviewed the Sprint 1 requirements to find necessary deliverables and website content.",
+                ],
+            },
+        ],
+    },
+    {
+        name: "Karina Rivera",
+        role: "Software Engineer",
+        date: "09/21/26",
+        categories: [
+            {
+                title: "Business Strategy",
+                items: [
+                    // Add bullet points here
+                ],
+            },
+            {
+                title: "Front-End Development",
+                items: [
+                    // Add bullet points here
+                ],
+            },
+            {
+                title: "Market Research",
+                items: [
+                    // Add bullet points here
+                ],
+            },
+            {
+                title: "Additional Contributions",
+                items: [
+                    // Add bullet points here
+                ],
+            },
+        ],
+    },
+    {
+        name: "Juan Reyna",
+        role: "Software Architect",
+        date: "09/21/26",
+        categories: [
+            {
+                title: "Business Strategy",
+                items: [],
+            },
+            {
+                title: "Front-End Development",
+                items: [],
+            },
+            {
+                title: "Market Research",
+                items: [],
+            },
+            {
+                title: "Additional Contributions",
+                items: [],
+            },
+        ],
+    },
+    {
+        name: "Jonathan Hernandez",
+        role: "DevOps",
+        date: "09/21/26",
+        categories: [
+            {
+                title: "Business Strategy",
+                items: [],
+            },
+            {
+                title: "Front-End Development",
+                items: [],
+            },
+            {
+                title: "Market Research",
+                items: [],
+            },
+            {
+                title: "Additional Contributions",
+                items: [],
+            },
+        ],
+    },
+    {
+        name: "Ricardo Morales Perez",
+        role: "Tester & Checker",
+        date: "09/21/26",
+        categories: [
+            {
+                title: "Business Strategy",
+                items: [],
+            },
+            {
+                title: "Front-End Development",
+                items: [],
+            },
+            {
+                title: "Market Research",
+                items: [],
+            },
+            {
+                title: "Additional Contributions",
+                items: [],
+            },
+        ],
+    },
+];
+
 function Sprint1() {
     return (
         <main className="sprint-page">
@@ -6,13 +158,13 @@ function Sprint1() {
                 <a href="#market-research">Market Research</a>
                 <a href="#business-strategy">Business Strategy</a>
                 <a href="#project-charter">Project Charter</a>
-                
+                <a href="#individual-contributions">Individual Contributions</a>
             </nav>
             <div className="sprint-header">
                 <h1>Sprint 1</h1>
                 <p>
-                    Explore our market research, business strategy, and
-                    project charter for Sprint 1.
+                    Explore our market research, business strategy,
+                    project charter, and individual contributions for Sprint 1.
                 </p>
             </div>
 
@@ -356,6 +508,75 @@ function Sprint1() {
                                 </li>
                             </ul>
                         </p>    
+                    </div>
+                </section>
+
+                {/* Individual Contributions */}
+                <section id="individual-contributions" className="sprint-section">
+                    <div className="section-heading">
+                        <h2>Individual Contributions</h2>
+                        <a
+                            href="/"
+                            download
+                            className="pdf-button"
+                        >
+                            [PDF]
+                        </a>
+                    </div>
+
+                    <div className="contributions-list">
+                        {individualContributions.map((member, index) => (
+                            <div key={member.name} className="contribution-card sprint-topic">
+                                <div className="contribution-header">
+                                    <h3>{`${index + 1}. ${member.name}`}</h3>
+                                    <div className="contribution-meta">
+                                        <span className="contribution-meta-item">
+                                            <strong>Role:</strong> {member.role}
+                                        </span>
+                                        <span className="contribution-meta-item">
+                                            <strong>Date:</strong> {member.date}
+                                        </span>
+                                    </div>
+                                </div>
+
+                                <div className="contribution-body">
+                                    <h4>Individual Contributions (What I Owned)</h4>
+
+                                    {member.categories.map((category) => (
+                                        <div key={category.title} className="contribution-category">
+                                            <h5>{category.title}:</h5>
+
+                                            {category.items && category.items.length > 0 ? (
+                                                <ul className="contribution-bullets">
+                                                    {category.items.map((item, i) => (
+                                                        <li key={i}>
+                                                            {typeof item === "string" ? (
+                                                                item
+                                                            ) : (
+                                                                <>
+                                                                    {item.text}
+                                                                    {item.subItems && item.subItems.length > 0 && (
+                                                                        <ul className="contribution-subbullets">
+                                                                            {item.subItems.map((subItem, j) => (
+                                                                                <li key={j}>{subItem}</li>
+                                                                            ))}
+                                                                        </ul>
+                                                                    )}
+                                                                </>
+                                                            )}
+                                                        </li>
+                                                    ))}
+                                                </ul>
+                                            ) : (
+                                                <p className="contribution-pending">
+                                                    <em>Pending member contribution...</em>
+                                                </p>
+                                            )}
+                                        </div>
+                                    ))}
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </section>
 

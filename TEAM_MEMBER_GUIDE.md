@@ -113,3 +113,58 @@ git add frontend/public/profile_images/<your-photo> frontend/src/pages/AboutUs.j
 git commit -m "Add profile information for <Your Name>"
 git push origin main
 ```
+
+---
+
+## Adding Your Individual Contributions for Sprint 1
+
+Each team member has a dedicated section under **Sprint 1 &rarr; Individual Contributions** (`#individual-contributions`).
+
+### Quick Steps:
+
+1. Open [Sprint1.jsx](frontend/src/pages/Sprint1.jsx):
+   ```text
+   frontend/src/pages/Sprint1.jsx
+   ```
+
+2. Locate the `individualContributions` array right at the top of the file.
+
+3. Find your entry (e.g., `Karina Rivera`, `Juan Reyna`, `Jonathan Hernandez`, or `Ricardo Morales Perez`).
+
+4. Add your bullet points to the `items` array under each category:
+   - **Business Strategy**
+   - **Front-End Development**
+   - **Market Research**
+   - **Additional Contributions**
+
+### How to format items:
+
+- **Simple bullet point:**
+  ```javascript
+  items: [
+      "Wrote the Strategy-to-Project Chain section.",
+      "Conducted 5 user interviews.",
+  ]
+  ```
+
+- **Bullet point with sub-bullets:**
+  ```javascript
+  items: [
+      {
+          text: "Collaborated with team to brainstorm Project Charter’s Business Objective section.",
+          subItems: [
+              "Gathered and organized the team’s ideas into a structured section.",
+          ],
+      },
+  ]
+  ```
+
+5. Save and check your changes locally at `http://localhost:5173/sprint-1#individual-contributions`.
+
+6. Commit and push:
+   ```bash
+   git add frontend/src/pages/Sprint1.jsx
+   git commit -m "Add Sprint 1 individual contributions for <Your Name>"
+   git push origin main
+   ```
+

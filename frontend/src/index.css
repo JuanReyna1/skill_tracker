@@ -612,3 +612,100 @@ body {
 .scope_cols li {
   margin-bottom: 12px;
 }
+
+/* Individual Contributions */
+
+.contributions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.contribution-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.75rem 2rem;
+  background-color: var(--surface);
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+[data-theme="dark"] .contribution-card {
+  border-color: #27272a;
+}
+
+.contribution-header {
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 1rem;
+}
+
+[data-theme="dark"] .contribution-header {
+  border-bottom-color: #27272a;
+}
+
+.contribution-header h3 {
+  margin-bottom: 0.5rem;
+}
+
+.contribution-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.contribution-meta-item strong {
+  color: var(--text-primary);
+}
+
+.contribution-subheading {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--purple);
+}
+
+.contribution-category {
+  margin-top: 1.25rem;
+}
+
+.contribution-category h5 {
+  font-size: 1.05rem;
+  margin: 0 0 0.25rem 0;
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.contribution-guideline {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.contribution-bullets {
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+  padding-left: 1.4rem;
+  line-height: 1.7;
+}
+
+.contribution-bullets li {
+  margin-bottom: 0.35rem;
+}
+
+.contribution-subbullets {
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+  padding-left: 1.25rem;
+  list-style-type: circle;
+}
+
+.contribution-pending {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin: 0.25rem 0 0.75rem 0;
+}
